@@ -1,8 +1,8 @@
-package design.provider.adaptee;
+package adapter.provider.A.adaptee;
 
-import design.provider.Response.A.ProviderAFlightResponse;
-import design.provider.Response.A.ProviderAHotelResponse;
-import design.provider.Response.A.ProviderARentalResponse;
+import adapter.provider.A.response.ProviderAFlightResponse;
+import adapter.provider.A.response.ProviderAHotelResponse;
+import adapter.provider.A.response.ProviderARentalResponse;
 
 import java.util.Date;
 
@@ -11,8 +11,8 @@ public class ProviderAApi {
     public ProviderAHotelResponse fetchHotels(String location, Date checkIn, Date checkOut) {
         // Simulate an API response for hotels
         ProviderAHotelResponse response = new ProviderAHotelResponse();
-        response.addHotel("design.provider.pojo.Hotel A1", location, 120.50, 4, true);
-        response.addHotel("design.provider.pojo.Hotel A2", location, 95.00, 3, true);
+        response.addHotel("adapter.adapter.pojo.provider.Hotel A1", location, 120.50, 4, true);
+        response.addHotel("adapter.adapter.pojo.provider.Hotel A2", location, 95.00, 3, true);
         return response;
     }
 

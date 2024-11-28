@@ -1,7 +1,7 @@
-package design.client;
+package adapter.client;
 
-import design.adapter.ProviderAdapter;
-import design.provider.pojo.Hotel;
+import adapter.ProviderAdapter;
+import adapter.provider.pojo.Hotel;
 
 import java.util.ArrayList;
 import java.util.Date;

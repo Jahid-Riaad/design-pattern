@@ -1,4 +1,4 @@
-package design.provider.pojo;
+package adapter.provider.pojo;
 
 public class Flight {
     private String flightNumber;

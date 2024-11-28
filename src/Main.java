@@ -1,11 +1,10 @@
-package design.client;
-
-import design.adapter.ProviderAdapter;
-import design.provider.pojo.Hotel;
-import design.adapter.ProviderAAdapter;
-import design.provider.adaptee.ProviderAApi;
-import design.adapter.ProviderBAdapter;
-import design.provider.adaptee.ProviderBApi;
+import adapter.client.OTASystem;
+import adapter.provider.A.adaptee.ProviderAApi;
+import adapter.provider.B.adaptee.ProviderBApi;
+import adapter.ProviderAdapter;
+import adapter.provider.pojo.Hotel;
+import adapter.provider.A.ProviderAAdapter;
+import adapter.provider.B.ProviderBAdapter;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,12 +1,13 @@
-package design.adapter;
+package adapter.provider.A;
 
-import design.provider.Response.A.ProviderAHotelResponse;
-import design.provider.pojo.Flight;
-import design.provider.pojo.Hotel;
-import design.provider.pojo.VacationRental;
-import design.provider.adaptee.ProviderAApi;
-import design.provider.Response.A.ProviderAFlightResponse;
-import design.provider.Response.A.ProviderARentalResponse;
+import adapter.ProviderAdapter;
+import adapter.provider.A.response.ProviderAFlightResponse;
+import adapter.provider.A.response.ProviderAHotelResponse;
+import adapter.provider.A.response.ProviderARentalResponse;
+import adapter.provider.A.adaptee.ProviderAApi;
+import adapter.provider.pojo.Flight;
+import adapter.provider.pojo.Hotel;
+import adapter.provider.pojo.VacationRental;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +38,7 @@ public class ProviderAAdapter implements ProviderAdapter {
         return transformVacationRentals(response);
     }
 
-    // Transform design.provider.Response.A.ProviderAHotelResponse (Hotels)
+    // Transform adapter.adapter.A.Response.provider.ProviderAHotelResponse (Hotels)
     private List<Hotel> transformHotels(ProviderAHotelResponse response) {
         List<Hotel> hotels = new ArrayList<>();
         for (Hotel providerAHotel : response.getHotels()) {
@@ -53,7 +54,7 @@ public class ProviderAAdapter implements ProviderAdapter {
         return hotels;
     }
 
-    // Transform design.provider.Response.A.ProviderAFlightResponse (Flights)
+    // Transform adapter.adapter.A.Response.provider.ProviderAFlightResponse (Flights)
     private List<Flight> transformFlights(ProviderAFlightResponse response) {
         List<Flight> flights = new ArrayList<>();
         for (Flight providerAFlight : response.getFlights()) {
@@ -71,7 +72,7 @@ public class ProviderAAdapter implements ProviderAdapter {
         return flights;
     }
 
-    // Transform design.provider.Response.A.ProviderARentalResponse (Vacation Rentals)
+    // Transform adapter.adapter.A.Response.provider.ProviderARentalResponse (Vacation Rentals)
     private List<VacationRental> transformVacationRentals(ProviderARentalResponse response) {
         List<VacationRental> rentals = new ArrayList<>();
         for (VacationRental providerARental : response.getRentals()) {

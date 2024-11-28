@@ -1,11 +1,12 @@
-package design.adapter;
+package adapter.provider.B;
 
-import design.provider.Response.B.ProviderBHotelResponse;
-import design.provider.pojo.Flight;
-import design.provider.pojo.Hotel;
-import design.provider.pojo.VacationRental;
-import design.provider.adaptee.ProviderBApi;
-import design.provider.Response.B.ProviderBVacationResponse;
+import adapter.ProviderAdapter;
+import adapter.provider.B.response.ProviderBHotelResponse;
+import adapter.provider.B.response.ProviderBVacationResponse;
+import adapter.provider.B.adaptee.ProviderBApi;
+import adapter.provider.pojo.Flight;
+import adapter.provider.pojo.Hotel;
+import adapter.provider.pojo.VacationRental;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +27,7 @@ public class ProviderBAdapter implements ProviderAdapter {
 
     @Override
     public List<Flight> getFlights(String origin, String destination, Date departure) {
-        // Assuming design.provider.adaptee.ProviderBApi doesn't support flight data in this example
+        // Assuming adapter.adapter.adaptee.provider.ProviderBApi doesn't support flight data in this example
         return new ArrayList<>();
     }
 
@@ -36,7 +37,7 @@ public class ProviderBAdapter implements ProviderAdapter {
         return transformVacationRentals(response);
     }
 
-    // Transform design.provider.Response.B.ProviderBHotelResponse (Hotels) to your design.provider.pojo.Hotel POJO
+    // Transform adapter.adapter.B.Response.provider.ProviderBHotelResponse (Hotels) to your adapter.adapter.pojo.provider.Hotel POJO
     private List<Hotel> transformHotels(ProviderBHotelResponse response) {
         List<Hotel> hotels = new ArrayList<>();
         for (Hotel hotelData : response.getHotels()) {
@@ -52,7 +53,7 @@ public class ProviderBAdapter implements ProviderAdapter {
         return hotels;
     }
 
-    // Transform design.provider.Response.B.ProviderBVacationResponse (Vacation Rentals) to your design.provider.pojo.VacationRental POJO
+    // Transform adapter.adapter.B.Response.provider.ProviderBVacationResponse (Vacation Rentals) to your adapter.adapter.pojo.provider.VacationRental POJO
     private List<VacationRental> transformVacationRentals(ProviderBVacationResponse response) {
         List<VacationRental> rentals = new ArrayList<>();
         for (VacationRental rentalData : response.getRentals()) {

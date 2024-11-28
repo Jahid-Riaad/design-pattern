@@ -1,8 +1,8 @@
-package design.adapter;
+package adapter;
 
-import design.provider.pojo.Flight;
-import design.provider.pojo.Hotel;
-import design.provider.pojo.VacationRental;
+import adapter.provider.pojo.Flight;
+import adapter.provider.pojo.Hotel;
+import adapter.provider.pojo.VacationRental;
 
 import java.util.Date;
 import java.util.List;

@@ -1,4 +1,4 @@
-package design.provider.pojo;
+package adapter.provider.pojo;
 
 public class VacationRental {
     private String name;

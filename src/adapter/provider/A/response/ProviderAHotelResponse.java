@@ -1,6 +1,6 @@
-package design.provider.Response.A;
+package adapter.provider.A.response;
 
-import design.provider.pojo.Hotel;
+import adapter.provider.pojo.Hotel;
 
 import java.util.ArrayList;
 import java.util.List;

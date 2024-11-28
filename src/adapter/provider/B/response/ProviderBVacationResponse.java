@@ -1,6 +1,6 @@
-package design.provider.Response.B;
+package adapter.provider.B.response;
 
-import design.provider.pojo.VacationRental;
+import adapter.provider.pojo.VacationRental;
 
 import java.util.ArrayList;
 import java.util.List;
